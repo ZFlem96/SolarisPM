@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>70</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Sign Up
+--
+- username:string
+- email: string
+- password:string
+--
+-checkUserInput:void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>70</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Main Page
+-
+-mainUser:User
+-
+-projectList()
+-sendTo(page)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>320</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Project Page
+--
+-sendTo(page)
+-updateProgress()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>320</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Create Project page
+-
+-setProjectName()
+-inviteUsers()
+-setLeader()
+-submit()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>70</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Login
+--
+- username:string
+- password:string
+--
+-checkUserInput:void
+-forgotUsernameOrPassword:void
+-signUp:void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>320</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>User Account Page
+--
+-changeUserName()
+-changePassword()
+-deleteAccount()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>560</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Task Page
+-
+-sendTo(page)
+-updateProgress()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>320</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Teammate page
+-
+-projectOrTask:Generic
+--
+-prepEmail()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>70</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Forget Username/Password
+-
+- username:string
+- email: string
+- password:string
+--
+-checkUserInput:void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>560</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Project
+--
+-projectName:string
+-leader:User
+-assignedUsers:Arraylist&lt;User&gt;
+-projectTasks:Arraylist&lt;Task&gt;
+-isComplete:boolean
+-percentage:float</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>560</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>User
+--
+-firstName:string
+-lastName:string
+-userName:string
+-password:string
+-projects:Project[]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>560</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Task
+--
+-taskName:String
+-subTask:Arraylist&lt;Subtask&gt;
+-assignedUsers:Arraylist&lt;User&gt;
+-isComplete:boolean
+-
+Subtask
+-
+-taskName:string
+-isComplete:boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

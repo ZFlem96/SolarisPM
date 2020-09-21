@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/usernameText"
+        android:layout_toStartOf="@+id/usernameText"
+        android:contentDescription="Username"
+        android:text="Username:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/usernameText"
+        android:layout_width="261dp"
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginTop="249dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/username"
+        android:layout_marginBottom="292dp"
+        android:text="Password:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="271dp"
+        android:layout_height="31dp"
+        android:layout_alignTop="@+id/password"
+        android:layout_toEndOf="@+id/password"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/forgotText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="152dp"
+        android:onClick="goToForget"
+        android:text="Forgot Username/Password? Click Here."
+        android:textColor="@android:color/holo_purple"
+        android:textSize="15sp"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/signUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="95dp"
+        android:onClick="goToSignUp"
+        android:text="New? Sign Up!"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="15sp"
+        android:clickable="true"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="188dp"
+        android:layout_height="167dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        app:srcCompat="@drawable/solarispmlogofinal" />
+
+    <Button
+        android:id="@+id/loginBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="199dp"
+        android:onClick="checkLogin"
+        android:text="Login" />
+
+    <ProgressBar
+        android:id="@+id/pBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signUpText"
+        android:layout_toEndOf="@+id/logo"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    tools:context=".SignUpActivity">
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/firstName"
+        android:layout_marginBottom="250dp"
+        android:contentDescription="Username"
+        android:text="Username:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="152dp"
+        android:layout_height="147dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/solarispmlogofinal" />
+
+    <EditText
+        android:id="@+id/usernameText"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/username"
+        android:layout_toEndOf="@+id/username"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/username"
+        android:layout_marginBottom="188dp"
+        android:text="Password:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/password"
+        android:layout_toEndOf="@+id/password"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="181dp"
+        android:text="First Name:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/firstNameText"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/firstName"
+        android:layout_toEndOf="@+id/firstName"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/username"
+        android:layout_marginTop="250dp"
+        android:text="Last Name:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/lastNameText"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lastName"
+        android:layout_toEndOf="@+id/firstName"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/username"
+        android:layout_centerVertical="true"
+        android:text="Email:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/email"
+        android:layout_toEndOf="@+id/email"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="91dp"
+        android:onClick="checkCredentials"
+        android:text="Sign Up!" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/signUp"
+        android:layout_below="@+id/lastName"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:text="*Password needs to be at least 6 characters long. "
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

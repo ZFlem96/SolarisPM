@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    tools:context=".LeaveProjectPage">
+
+
+    <TextView
+        android:id="@+id/leaveProjects"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Select projects you want to leave:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp" />
+
+    <ListView
+        android:id="@+id/projectList"
+        android:layout_width="253dp"
+        android:layout_height="386dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_key">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/submitBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp"
+        android:text="Submit"
+        android:onClick="LeaveProjects"/>
+</RelativeLayout>
